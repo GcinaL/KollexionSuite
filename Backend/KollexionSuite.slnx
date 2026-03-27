@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KollexionSuite.Api/KollexionSuite.Api.csproj" Id="29ebc427-8db7-41e1-a1c2-95cf2b9ecd50" />
+  <Project Path="KollexionSuite.Application/KollexionSuite.Application.csproj" />
+  <Project Path="KollexionSuite.Domain/KollexionSuite.Domain.csproj" />
+  <Project Path="KollexionSuite.Infrastructure/KollexionSuite.Infrastructure.csproj" />
+</Solution>

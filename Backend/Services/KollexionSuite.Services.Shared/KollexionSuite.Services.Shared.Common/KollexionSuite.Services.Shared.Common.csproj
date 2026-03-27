@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>KollexionSuite.Services.Shared.Common</PackageId>
+    <Version>1.1.1</Version>
+    <Authors>Lunga Dlamini</Authors>
+    <Company>Madibane Technologies</Company>
+    <Description>Common contracts, enums, and shared DTOs for KollexionSuite microservices.</Description>
+    <RepositoryUrl>https://github.com/kollexionsuite/kollexionsuite.services.shared</RepositoryUrl>
+    <PackageTags>KollexionSuite;Shared;Common;Microservices</PackageTags>
+    <PackageOutputPath>../../nuget</PackageOutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KollexionSuite.Services.Shared.Utilities\KollexionSuite.Services.Shared.Utilities.csproj" />
+  </ItemGroup>
+
+
+</Project>

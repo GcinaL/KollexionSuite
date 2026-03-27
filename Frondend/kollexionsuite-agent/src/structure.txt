@@ -1,0 +1,59 @@
+src/
+│
+├── api/
+│   ├── clients/
+│   │   └── httpClient.ts
+│   ├── services/
+│   │   ├── accountService.ts
+│   │   ├── caseService.ts
+│   │   ├── paymentService.ts
+│   │   ├── ptpService.ts
+│   │   ├── disputeService.ts
+│   │   ├── communicationService.ts
+│   │   ├── documentService.ts
+│   │   └── authService.ts
+│   ├── hooks/
+│   │   ├── useAccounts.ts
+│   │   ├── useCases.ts
+│   │   ├── usePayments.ts
+│   │   └── useDisputes.ts
+│   └── index.ts
+│
+├── features/
+│   ├── accounts/
+│   │   ├── components/AccountCard.tsx
+│   │   ├── pages/AccountListPage.tsx
+│   │   └── pages/AccountDetailsPage.tsx
+│   ├── cases/
+│   ├── payments/
+│   ├── ptp/
+│   ├── disputes/
+│   ├── communications/
+│   ├── documents/
+│   └── auth/
+│
+├── components/
+│   ├── common/Button.tsx
+│   ├── layout/Header.tsx
+│   └── feedback/Loader.tsx
+│
+├── routes/
+│   └── AppRoutes.tsx
+│
+├── store/
+│   ├── authSlice.ts
+│   └── uiSlice.ts
+│
+├── utils/
+│   ├── formatters.ts
+│   └── validators.ts
+│
+├── styles/
+│   └── globals.css
+│
+├── config/
+│   ├── env.ts
+│   └── constants.ts
+│
+├── App.tsx
+└── main.tsx

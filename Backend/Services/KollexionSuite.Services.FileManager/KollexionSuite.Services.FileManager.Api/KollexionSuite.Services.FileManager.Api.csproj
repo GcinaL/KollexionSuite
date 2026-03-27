@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KollexionSuite.Services.FileManager.Application\KollexionSuite.Services.FileManager.Application.csproj" />
+    <ProjectReference Include="..\KollexionSuite.Services.FileManager.Infrastructure\KollexionSuite.Services.FileManager.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

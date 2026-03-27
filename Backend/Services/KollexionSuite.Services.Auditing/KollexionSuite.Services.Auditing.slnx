@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KollexionSuite.Services.Auditing.Api/KollexionSuite.Services.Auditing.Api.csproj" />
+  <Project Path="KollexionSuite.Services.Auditing.Application/KollexionSuite.Services.Auditing.Application.csproj" />
+  <Project Path="KollexionSuite.Services.Auditing.Domain/KollexionSuite.Services.Auditing.Domain.csproj" />
+  <Project Path="KollexionSuite.Services.Auditing.Infrastructure/KollexionSuite.Services.Auditing.Infrastructure.csproj" />
+</Solution>

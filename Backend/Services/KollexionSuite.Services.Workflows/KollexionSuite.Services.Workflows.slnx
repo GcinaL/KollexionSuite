@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KollexionSuite.Services.Workflows.Api/KollexionSuite.Services.Workflows.Api.csproj" Id="2aa36ed5-cd61-4e0a-bf61-9a7d6c31a0b0" />
+  <Project Path="KollexionSuite.Services.Workflows.Application/KollexionSuite.Services.Workflows.Application.csproj" Id="b708f9ff-8c44-4228-9ff6-5fd51232ecbf" />
+  <Project Path="KollexionSuite.Services.Workflows.Domain/KollexionSuite.Services.Workflows.Domain.csproj" Id="3a5e3232-9027-4233-8608-3e7631e3d6eb" />
+  <Project Path="KollexionSuite.Services.Workflows.Infrastructure/KollexionSuite.Services.Workflows.Infrastructure.csproj" Id="bc222d36-e22b-4b98-be7e-c7284153aa40" />
+</Solution>

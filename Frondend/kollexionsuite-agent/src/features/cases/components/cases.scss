@@ -1,0 +1,21 @@
+
+.list-group-item:hover {
+  background-color: "#584587";
+}
+
+.case-details-bg {
+  position: relative;
+  background-image: url("../../../assets/img/icons/elements-01.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+
+   @media (max-width: 767.98px) {
+    background-image: none;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KollexionSuite.Services.Handover.Api/KollexionSuite.Services.Handover.Api.csproj" Id="809ca196-7060-428b-abae-19aee90ee9ec" />
+  <Project Path="KollexionSuite.Services.Handover.Application/KollexionSuite.Services.Handover.Application.csproj" Id="233569e1-67f9-450c-bec8-cfe137096d64" />
+  <Project Path="KollexionSuite.Services.Handover.Domain/KollexionSuite.Services.Handover.Domain.csproj" Id="f291aee1-2bf7-434a-b81a-82e3c0fc817c" />
+  <Project Path="KollexionSuite.Services.Handover.Infrastructure/KollexionSuite.Services.Handover.Infrastructure.csproj" Id="b99753cd-87bc-40f4-93d5-08e3f54cedc4" />
+</Solution>

@@ -1,0 +1,164 @@
+/* === Table container border and layout (like admin UI screenshot) === */
+.dataTable-wrapper {
+              /* smooth rounded corners */
+  overflow: auto;                   /* clip edges of rounded corners */
+}
+
+/* Ensure the DataTable component sits flush inside */
+.dataTable-wrapper .rdt_Table {
+  background-color: transparent;
+}
+
+/* Align table head */
+.dataTable-wrapper .rdt_TableHeadRow {
+  border: 1px solid #e9ecef;          /* light Bootstrap-style border */
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f7f8f9;
+  min-height: 34px !important;  
+}
+
+[data-bs-theme=dark] .dataTable-wrapper .rdt_TableHeadRow
+{
+  background-color: #252630;
+  color: #dee2e6;
+  border-color: #35374b;
+}
+
+
+/* tighter header padding */
+.dataTable-wrapper .rdt_TableHead .rdt_TableCol {
+  line-height: 1.2;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: transparent !important;
+}
+
+/* optionally also reduce the min-height the lib sets */
+
+
+
+.dataTable-wrapper .rdt_TableRow
+{
+   border-right: 1px solid #e9ecef;
+   border-left: 1px solid #e9ecef;
+   border-bottom: 1px solid #e9ecef;
+   background-color:transparent !important;
+}
+
+[data-bs-theme=dark] .dataTable-wrapper .rdt_TableRow
+{
+  color: #dee2e6;
+  border-color: #35374b;
+}
+
+.dataTable-pagination .rdt_Pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: none;
+  gap: 0.75rem;
+  background-color: transparent !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 15px;
+  color: #051321;
+}
+
+[data-bs-theme=dark] .dataTable-pagination .rdt_Pagination 
+  {
+    color: #dee2e6 !important;
+    border-color: #35374b;
+  }
+
+/* === Left section (first three children) === */
+.dataTable-pagination .rdt_Pagination div:nth-child(1),
+.dataTable-pagination .rdt_Pagination div:nth-child(2),
+.dataTable-pagination .rdt_Pagination div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* === Right section (fourth child) === */
+.dataTable-pagination .rdt_Pagination div:nth-child(4) {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto; /* ✅ pushes the 4th child to the right */
+}
+
+
+/* === Select (rows per page dropdown) === */
+.dataTable-pagination .rdt_Pagination select {
+  border-radius: 4px;
+  padding: 2px auto;
+  border: 1px solid #dee2e6;
+  font-size: 0.85rem;
+}
+
+.dataTable-pagination .rdt_Pagination select:focus {
+  outline: none;
+  border-color: #7539ff;
+  box-shadow: 0 0 0 2px rgba(117, 57, 255, 0.2);
+}
+
+/* === Page Buttons === */
+.dataTable-pagination .rdt_Pagination button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  color: #051321;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dataTable-pagination .rdt_Pagination button:hover {
+  border-color: #7539ff;
+  color: #7539ff;
+}
+
+/* === Active Page Button === */
+.dataTable-pagination .rdt_Pagination button[aria-current="true"] {
+  border-color: #7539ff;
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(117, 57, 255, 0.15);
+}
+
+/* === Disabled Buttons === */
+.dataTable-pagination .rdt_Pagination button:disabled {
+  opacity: 0.6;
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+/* === Arrow Button Styling (Previous / Next) === */
+.dataTable-pagination .rdt_Pagination button[aria-label="previous page"],
+.dataTable-pagination .rdt_Pagination button[aria-label="next page"] {
+  width: auto;
+  padding: 0 0.6rem;
+  font-weight: 500;
+}
+
+/* === Responsive Fixes === */
+@media (max-width: 668px) {
+  .dataTable-pagination .rdt_Pagination {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.75rem;
+  }
+}
+
+/* ✅ Also fix the inner wrapper that causes ellipsis */
+.rdt_TableCell > div {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}

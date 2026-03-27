@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KollexionSuite.Services.Shared.Audit" Version="1.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KollexionSuite.Services.Auditing.Application\KollexionSuite.Services.Auditing.Application.csproj" />
+    <ProjectReference Include="..\KollexionSuite.Services.Auditing.Infrastructure\KollexionSuite.Services.Auditing.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

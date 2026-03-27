@@ -1,0 +1,14 @@
+/* src/components/CircleButton.css */
+.btn-circle-sm { width: 36px; height: 36px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50% !important;}
+.btn-circle-md { width: 48px; height: 48px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50% !important;}
+.btn-circle-lg { width: 60px; height: 60px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50% !important;}
+
+/* Optional: icon sizing helpers */
+.icon-sm { font-size: 16px; line-height: 1; }
+.icon-md { font-size: 18px; line-height: 1; }
+.icon-lg { font-size: 22px; line-height: 1; }
+
+[data-bs-theme=dark] .text-secondary
+  {
+    color: #dee2e6 !important;
+  }

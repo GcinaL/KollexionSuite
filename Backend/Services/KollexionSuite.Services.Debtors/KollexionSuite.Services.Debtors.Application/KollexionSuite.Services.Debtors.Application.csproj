@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KollexionSuite.Services.Shared.Audit" Version="1.0.3" />
+    <PackageReference Include="KollexionSuite.Services.Shared.Common" Version="1.1.1" />
+    <PackageReference Include="KollexionSuite.Services.Shared.MessageBroker" Version="1.0.2" />
+    <PackageReference Include="KollexionSuite.Services.Shared.Utilities" Version="1.0.8" />
+    <PackageReference Include="KollexionSuite.Services.Shared.Workflows" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KollexionSuite.Services.Debtors.Domain\KollexionSuite.Services.Debtors.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
